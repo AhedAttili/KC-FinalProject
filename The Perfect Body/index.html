@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Healthy Body</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="./THE PERFECT BODY LOGO2.jpg" type="image/x-icon">
+</head>
+<body>
+  
+  <header id="The Healthy Body" class="header">
+    <div class="container">
+   <nav>
+  <ul>
+    <a href="https://logomaster.ai/?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMQX5_lMPbNt36gZajxP2jzyLMBNfLD1I5F_YB5BuZ8zOg0-pRMIdtwaAo0IEALw_wcB"
+    target="_blank">
+    <img class="logo" src="./THE PERFECT BODY LOGO.png" alt="THE PERFECT BODY LOGO">
+<div class="divC">
+ <li><a href="#Testing Your Weight">Testing Your Weight</a></li>
+ <li><a href="#Losing Weight">Losing Weight</a></li>
+ <li><a href="#Gaining Weight">Gaining Weight</a></li>
+ <li><a href="#Author">Author</a></li>
+</div>
+ <nav>
+  </ul>
+   </nav>
+    </div>
+     </header>
+
+     <br><br><br><br><br>
+     <br><br><br><br><br>
+     <br><br><br><br><br>
+     <br><br><br><br><br>
+
+    <h1 class="h1" style="color: green;">The Healthy Body, And How To Achieve It.</h1>
+ <br>
+
+
+
+   <div class="container2" style="text-align: center;" justify-content="center">
+    <div class="container4" style="justify-content: center;">
+
+ <h1 style="align-items: center;">You Can Check Your Weight Here</h1>
+
+    <br><br>
+    <section id="Testing Your Weight">
+      <input id="weight" type="number" placeholder="Weight In Kilogram"/><br> <br>
+      <input id="height" type="number" placeholder="Height In Centimeters"/>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="Calculate()" style="color: red;">Calculate</button>
+    </section>
+
+</div>
+  </div>
+  
+  <button class="button2" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  
+<br><br><br><br><br>
+
+
+<h1 id="Losing Weight" class="h11">Losing Weight</h1>
+<p class="p">In addition to help you lose weight, exercise has been linked to many other benefits,<br>
+ including improved mood, stronger bones, and a reduced risk of many chronic diseases</p>
+
+<a href="./index2.html" class="a" target="_blank">Click Here To Know More About Losing Weight</a>
+<br>
+
+<br><br><br>
+
+<h1 id="Gaining Weight" class="h11">Gaining Weight</h1>
+<p class="p">Although being lean can often be healthy, <br> being underweight can be a concern if it's the result of
+ poor nutrition or if you <br> are pregnant or have other health concerns</p>
+
+ <a href="./index3.html" class="a2" target="_blank">Click Here To Know More About Gaining Weight</a>
+
+
+<div class="divFinal">
+  <div class="divFinal1">
+
+    <p id="Author" class="pFF"><a href="https://lab.joincoded.com/app/profile" target="_blank">Created By: AHED THAMER ATTILI</p><br>
+  
+    </div>
+   <div class="divFinal2">
+  <p class="pF" style="justify-content: center;"><a href="https://uscib.org/all-rights-reserved-ud-1702/" target="_blank">Copyright © 2022 all rights reserved</p>
+  </div>
+   </div>
+   <a href="https://logomaster.ai/?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMQX5_lMPbNt36gZajxP2jzyLMBNfLD1I5F_YB5BuZ8zOg0-pRMIdtwaAo0IEALw_wcB" target="_blank">
+
+<img class="imgfinale" src="./THE PERFECT BODY LOGO.png" alt="THE PERFECT BODY LOGO">
+  </body>
+   <script>
+
+function BMI (weight, height) {
+  let result = weight / (height * height);
+  return result;
+}
+
+console.log (BMI(70, 1.7));
+
+function Status (bmi) {
+if (bmi < 18.5) {
+  return ("You Are UnderWeight");
+} else if (bmi >= 18.5 && bmi < 25) {
+ return ("Your Weight Is Healthy");
+} else {
+return ("You Have Obesity")
+}
+}
+
+function Calculate() {
+  let weight = document.getElementById("weight").value;
+  let height = document.getElementById("height").value;
+
+  let bmi = BMI(weight, height);
+
+  let desc = Status(bmi);
+
+  let div = document.getElementById('result');
+
+  div.innerText = bmi + " == " + desc;
+}
+
+  var mybutton = document.getElementById("myBtn");
+  
+
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  alert("This Website Is Going To See If Your Body Is Healthy, And If Not It Will Help You Achieve It")
+  </script>
+
+</html>

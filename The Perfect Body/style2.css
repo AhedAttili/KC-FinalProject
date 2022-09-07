@@ -1,0 +1,458 @@
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+  background-image: url(./s-well-mP8HvwFA_dw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 1344px;
+}
+
+
+.p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a{
+   display: inline;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  float: left;
+  position: absolute;
+  border-radius: 10px;
+}
+
+ul li {
+    display: inline;
+    text-decoration: none;
+    max-width: 1300px;
+    padding:0 10px;
+}
+
+ul li:hover {
+    background-color: #999;
+    transition: 0.3s;
+}
+
+
+.nav ul {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    text-transform: uppercase;    
+}
+
+.nav ul.icon {
+  display: none;
+}
+
+.nav a {
+    color: #444;
+    text-decoration: none;
+
+}
+
+.nav li {
+    position: relative;
+    height: 16px;
+    margin: 10px;
+}
+
+
+
+
+ol li  {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.stg {
+    color: green;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+
+  * {box-sizing:border-box}
+
+
+.slideshow-container {
+  width: 600px;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: #444;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 20px 20px 0;
+  user-select: none;
+}
+
+
+.mySlides fade {
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  right: 0;
+  border-radius: 20px 0 0 20px;
+  background-color: #444;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: rgb(7, 255, 152);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  left: 600px;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+#header0 {
+   background-color: #333;
+    margin: 10px;
+    color: white;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 98vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+a:visited {
+  color: #04AA6D;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #111;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 154px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.drpdBtn {
+  margin: 7px;
+  padding: 15px;
+}
+
+.divFinal {
+  background-color: #333;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.divFinal2 {
+  border: solid #333;
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  flex-direction: row;
+}
+
+.divFinal2:hover {
+  color: #fff;
+  background-color:#04AA6D;
+  transition: 0.3s;
+}
+
+.divFinal1 {
+  border: solid #333;
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  flex-direction: row;
+  margin-top: 13px;
+}
+
+.divFinal1:hover {
+  color: #fff;
+  background-color:#04AA6D;
+  transition: 0.3s;
+}
+
+.divFinal1:link {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.divFinal1:visited {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.divFinal1:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.imgfinale {
+  width: 200px;
+  height: 200px;
+  float: right;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 4px;
+  right: 4px;
+  border-radius: 10px;
+  top: 1879px;
+}
+
+.divCenter {
+  color: #fff;
+}
+
+.pF {
+  margin-top: 13px;
+  color: #000;
+}
+
+.pF:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.pF:link {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pF:visited {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.pF:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pFF {
+  color: #000;
+}
+
+.pFF:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.pFF:link {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pFF:visited {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.pFF:active {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none;
+  background-color: red;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
